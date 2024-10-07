@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 2px solid white;
+    margin-top: 15px;
+}
+.logo{
+    flex-shrink: 0;
+}
+header .logo h1 {
+    font-size: 2em;
+    font-family: 'Georgia', serif;
+    color: white;
+}
+nav{
+    flex-grow: 0.5;
+    text-align: center;
+}
+.center-nav {
+    list-style: none;
+    display: inline-flex; /* Inline-flex to keep items in a row */
+    gap: 20px;
+    padding: 0;
+}
+
+.center-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.sign-in {
+    display: flex;              /* Aligns items horizontally */
+    gap: 20px;                  /* Adds space between Sign In and Search Icon */
+    align-items: center;        /* Vertically centers items */
+}
+.sign-in a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+.search-button {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border-left: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-button i {
+    color: white;
+    font-size: 20px;
+    opacity: calc(0.2);
+}
+.search-button i:hover{
+    opacity: calc(1);
+}
+.body{
+    background-image: url(coffee-beans-drop-splash.png);
+    height: 100%;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+.hero-section {
+    position: relative;
+    padding: 50px;
+    display: flex;
+    justify-content:baseline;
+    align-items: left;
+    color: white;
+    overflow: hidden;
+}
+/* Background "Caffeine" words */
+.background-text {
+    position: absolute;
+    font-size: 205px;         /* Large font size */
+    color: rgba(255, 255, 255, 0.05); /* Very transparent */
+    font-weight: bold;
+    pointer-events: none;     /* Disable interaction */
+    z-index: 0; 
+}
+.background-text-1 {
+    bottom: 75%;
+    left: 120%;
+}
+.background-text-2 {
+    bottom: 36%;
+    left: 120%;
+}
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    max-width: 600px;
+}
+/* Main heading and paragraph */
+.content h1 {
+    margin-top: 30px;
+    font-size: 58px;
+    margin-bottom: 35px;
+    text-align: left;
+}
+.content p {
+    font-size: 18px;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+/* Buttons styling */
+.buttons {
+    margin-top: 45px; /* Adds some space between the buttons and the text */
+}
+.btn {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+}
+/* Outline version for the second button */
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: black;
+}
+.btn i {
+    margin-left: 5px; /* Adds space between the text and the arrow */
+    font-size: 26px;
+    vertical-align: middle;
+}
+/* Styling for the stats table */
+.stats-table {
+    display: flex;
+    justify-content: center; 
+    border-collapse: collapse; /* Remove gaps between cells */
+    margin-top: 40px; /* Add space above the table */
+    margin-left: -20px;
+    margin-bottom: 30px;
+}
+
+/* Styling for table cells (individual stats) */
+.stats-table td {
+    padding: 20px; /* Adds space inside each cell */
+    color: #fff; /* Customize text color based on design */
+}
+
+/* Styling for the numbers */
+.stats-table h3 {
+    font-size: 36px; /* Larger font for the numbers */
+    margin: 0;
+    font-weight: bold;
+    
+}
+
+/* Styling for the labels */
+.stats-table p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    text-align: center;
+}
